@@ -21,5 +21,5 @@ Praktikum ini terdiri dari 9 modul yang berfokus pada berbagai konsep dan prakti
 6. **Implementasi Basis Data**
    Pada modul ini, mahasiswa mempelajari mengenai implementasi basis data. Latihan yang diberikan melibatkan pembuatan database sederhana untuk pengelolaan sebuah toko. Tujuan dari latihannya adalah untuk memahami cara mendesain skema basis data, membuat tabel, dan mengisi data. Selain itu, mahasiswa juga diberikan tugas untuk merancang database dari erd yang diberikan.
    Berikut adalah file database untuk latihan dan tugas:
-   - [Latihan Database Toko](Prak-IMPL-TegarPutuSatria/Modul%206/LatihanDB/toko.sql)
-   -[Tugas Database Universitas](Prak-IMPL-TegarPutuSatria/Modul%206/TugasDB/universitas.sql)
+   - **[Latihan Database Toko](Prak-IMPL-TegarPutuSatria/Modul%206/LatihanDB/toko.sql)**
+   - **[Tugas Database Universitas](Prak-IMPL-TegarPutuSatria/Modul%206/TugasDB/universitas.sql)**
