@@ -6,24 +6,6 @@ if (!$connection) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 
-// Cek apakah ada parameter 'delete' di URL
-if (isset($_GET['delete'])) {
-    $idPesan = $_GET['delete'];
-
-    // Query untuk menghapus pesan berdasarkan idPesan
-    $deleteQuery = "DELETE FROM pesan WHERE idPesan = ?";
-    $stmt = mysqli_prepare($connection, $deleteQuery);
-    mysqli_stmt_bind_param($stmt, "i", $idPesan); // Menyiapkan parameter
-
-    if (mysqli_stmt_execute($stmt)) {
-        // Redirect untuk memperbarui tampilan setelah penghapusan
-        header("Location: FormTampilPesan.php");
-        exit();
-    } else {
-        die("Gagal menghapus pesan: " . mysqli_error($connection));
-    }
-}
-
 // Menjalankan query untuk menampilkan pesan
 $query = "SELECT * FROM pesan";
 $result = mysqli_query($connection, $query);
@@ -69,11 +51,11 @@ if (!$result) {
                         <td><?= htmlspecialchars($row['TextPesan']) ?></td>
                         <td><?= htmlspecialchars($row['date']) ?></td>
                         <td>
-                            <!-- Tombol Tambah Pesan (bisa sesuaikan URL untuk form tambah pesan khusus) -->
-                            <a href="formTambahPesan.php" class="btn btn-primary">Tambah Pesan</a>
+                            <!-- Tombol Tambah Pesan -->
+                            <a href="FormTambahPesan.php" class="btn btn-primary">Tambah Pesan</a>
                             
-                            <!-- Tombol Hapus dengan parameter 'delete' yang di-encode -->
-                            <a href="FormTampilPesan.php?delete=<?= urlencode($row['idPesan']) ?>" class="btn btn-danger">Hapus</a>
+                            <!-- Tombol Hapus dengan URL mengarah ke deletePesan.php -->
+                            <a href="deletePesan.php?delete=<?= urlencode($row['idPesan']) ?>" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
