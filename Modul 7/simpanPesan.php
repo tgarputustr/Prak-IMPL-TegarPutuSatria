@@ -16,6 +16,7 @@ if (!$conn) {
 $sql = "INSERT INTO pesan (idPengirim, idPenerima, judul, TextPesan, date) VALUES ('$idPengirim', '$idPenerima', '$judul', '$TextPesan', '$date')";
 if (mysqli_query($conn, $sql)) {
     echo "Pesan berhasil ditambahkan";
+    header("Location: FormTampilPesan.php");
 } else {
     echo "Pesan gagal ditambahkan: " . mysqli_error($conn);
 }
