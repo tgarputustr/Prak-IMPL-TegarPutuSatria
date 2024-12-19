@@ -1,6 +1,6 @@
 <?php
 session_start();
-$idPengirim = $_POST['id'];
+$idPengirim = 1;
 $idPenerima = $_POST['Penerima'];
 $judul = $_POST['judul'];
 $TextPesan = $_POST['TextPesan'];
