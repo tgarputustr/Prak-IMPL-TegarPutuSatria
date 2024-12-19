@@ -1,0 +1,62 @@
+/* Mengatur gaya umum untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Gaya header tabel */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Gaya untuk setiap baris data */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tombol umum */
+.btn {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 4px;
+    display: inline-block;
+}
+
+/* Tombol tambah pesan */
+.btn-primary {
+    background-color: #007bff;
+}
+
+/* Tombol hapus */
+.btn-danger {
+    background-color: #f44336;
+}
+
+/* Efek hover pada tombol */
+.btn:hover {
+    opacity: 0.8;
+}
