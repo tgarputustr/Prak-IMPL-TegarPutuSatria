@@ -23,3 +23,7 @@ Praktikum ini terdiri dari 9 modul yang berfokus pada berbagai konsep dan prakti
    Berikut adalah file database untuk latihan dan tugas:
    - **[Latihan Database Toko](Modul%206/LatihanDB/toko.sql)**
    - **[Tugas Database Universitas](Modul%206/TugasDB/universitas.sql)**
+7. **Implementasi Proses Desain Prosedural**
+   Pada modul ini, modul yang membahas mengenai implementasi proses desain prosedural dalam suatu pengembangan perangkat lunak. Pendekatan menggunakan desain prosedural ini cocok untuk sistem atau aplikasi yang sifatnya sekuensial dan terstruktur. Pada modul ini sudah diberikan sebuah Data-Flow Diagram yang digunakan untuk latihan melakukan implementasi proses desain, dengan begitu kita sebagai mahasiswa dapat memahami bagaimana alur dalam melakukan implementasi proses desain prosedural.
+9. **Implementasi Proses Desain Object-Oriented**
+   Pada modul ini membahas mengenai implementasi proses desain object oriented, yang mana implementasinya berdasarkan paradigma object, biasanya pemodelannya didasarkan dari UML, acuan utama dalam implementasi kode dapat menggunakan class diagram dan sequence diagram. Sequence diagram sendiri merupakan diagram yang akan menggambarkan urutannya dari interaksi antar class yang terlibat dalam satu use case melalui method objectnya, sedangkan class diagram merupakan diagram yang menggambarkan struktur, atribut, kelas, metode, dan hubungan antar objek. Pada latihan ini diperantahkan melakukan implementasi dari class diagram, dimana membuat sebuah aplikasi pencatatan perkuliahan.
