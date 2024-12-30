@@ -6,7 +6,7 @@ public class PersonRef {
     public void setName(String newName) {
         name = newName;
     }
-    
+
     public static void main(String[] args) {
         PersonRef person = new PersonRef    ();
         person.setName("Bob Smith");
